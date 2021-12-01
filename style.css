@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+[class*=grid] { 
+    margin: 0;
+}
+html {scroll-behavior: smooth;}
+
+/* Re-usable Utiity Classes  */
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+
+.padded    { padding: 5%;   }
+.padded-1  { padding: 1rem; }
+.padded-2  { padding: 2rem; }
+
+.padded-t-2  { padding-top: 2rem; }
+.padded-b-2  { padding-bottom: 2rem; }
+
+.margin-b-0 { margin-bottom: 0; }
+
+.bg-featured { background-color: #183039; }
+.bg-dark     { background-color: #24282B; }
+
+.light-text     { color: white; } 
+.featured-text  { color: #183039; } 
+
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+
+/* General typography & universal styles  */
+body {
+    font-family: 'Martel', serif;
+    font-weight: 200;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-family: 'Didot', Georgia, serif;
+}
+
+h1 {
+    font-size: 10rem;
+    line-height: 0.8;
+}
+/* Images & Background Images */
+.bg-image {
+    background-color: #183039;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.bg-cocktail {background-image: url('/images/negroni-glass-faded.jpg') }
+.bg-window {background-image: url('/images/negroni-2.jpg') }
+.bg-plant {background-image: url('/images/negroni-4.jpg') }
+.bg-water {background-image: url('/images/water-light.jpg') }
+
