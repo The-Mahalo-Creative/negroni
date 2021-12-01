@@ -1,0 +1,65 @@
+<section class="grid-center padded bg-featured light-text menu">
+    <div class="col-12 text-center">
+        <h2 class="text-lg"> menu. </h2>
+    </div>
+    <!-- First column  -->
+    <div class="col-5_lg-6_sm-12 padded-2">
+        <h3> appetisers. </h3>
+        <div class="grid">
+            {% for item in page.appetisers %}
+            <div class="col-10">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="col-2 editable">
+                <span class="price">{{item.price}}</span>
+            </div>
+            {% endfor %}
+        </div>
+        <h3> tapas. </h3>
+        <div class="grid">
+            {% for item in page.tapas %}
+            <div class="col-10">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="col-2 editable">
+                <span class="price">{{item.price}}</span>
+            </div>
+            {% endfor %}    
+        </div>
+    </div>
+     <!-- Second column  -->
+     <div class="col-5_lg-6_sm-12 padded-2 mob-padded-t-0">
+        <h3> classics. </h3>
+        <div class="grid">
+            {% for item in page.classics %}
+            <div class="col-10">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="col-2 editable">
+                <span class="price">{{item.price}}</span>
+            </div>
+            {% endfor %}    
+        </div>
+        <h3> negronis. </h3>
+        <div class="grid">
+            {% for item in page.negronis %}
+            <div class="col-10">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="col-2 editable">
+                <span class="price">{{item.price}}</span>
+            </div>
+            {% endfor %}    
+        </div> 
+        <h3> signature. </h3>
+        <div class="grid">
+            {% for item in page.signature %}
+            <div class="col-10">
+                <p>{{item.description}}</p>
+            </div>
+            <div class="col-2 editable">
+                <span class="price">{{item.price}}</span>
+            </div>
+            {% endfor %}    
+        </div>
+</section>

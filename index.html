@@ -5,16 +5,40 @@ title: negroni
 appetisers:
  - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum   
    price: $20
- - description: 
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum  
    price: $20
- - description: 
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
+   price: $20
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
    price: $20
 
 tapas:
- - price: $20
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium commodi, cumque dignissimos nostrum temporibus 
- - price: $20
-   description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusantium commodi, cumque dignissimos nostrum temporibus 
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum   
+   price: $20
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum  
+   price: $20
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
+   price: $20
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
+   price: $20
+  
+classics:
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum   
+   price: $20
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum  
+   price: $20
+
+negronis:
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
+   price: $20
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
+   price: $20  
+
+signature:
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
+   price: $20
+ - description: Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero pariatur nostrum 
+   price: $20  
 ---
 <!-- Site header -->
 <header class="grid-left tall-90 bg-image bg-cocktail">
@@ -35,71 +59,17 @@ tapas:
     </div>
 </section>
 
-<!-- menu -->
-<section class="grid-center bg-featured light-text padded">
-    <div class="col-12 text-center">
-        <h2 class="text-lg">menu.</h2>
-    </div>
-    <!-- First column  -->
-    <div class="col-5_lg-6_sm-12 padded-2">
-        <h3> appetisers. </h3>
-        <div class="grid">
-            {% item for page.appetisers %}
-            <div class="col-10">
-                {{item.description}}</p>
-            </div>
-            <div class="col-2 editable">
-                <span class="price">{{item.price}}</span>
-            </div>
-            {% endfor %}
-        <h3> tapas. </h3>
-        <div class="grid">
-            {% item for page.tapas %}
-            <div class="col-10">
-                {{item.description}}</p>
-            </div>
-            <div class="col-2 editable">
-                <span class="price">{{item.price}}</span>
-            </div>
-            {% endfor %}    
-        </div>
-    </div>
-     <!-- Second column  -->
-     <div class="col-5_lg-6_sm-12 padded-2 mob-padded-t-0">
-        <h3> classics. </h3>
-        <div class="grid">
-            {% item for page.classics %}
-            <div class="col-10">
-                {{item.description}}</p>
-            </div>
-            <div class="col-2 editable">
-                <span class="price">{{item.price}}</span>
-            </div>
-            {% endfor %}    
-        </div>
-        <h3> negronis. </h3>
-        <div class="grid">
-            {% item for page.negronis %}
-            <div class="col-10">
-                {{item.description}}</p>
-            </div>
-            <div class="col-2 editable">
-                <span class="price">{{item.price}}</span>
-            </div>
-            {% endfor %}    
-        </div> 
-        <h3> signature. </h3>
-        <div class="grid">
-            {% item for page.signature %}
-            <div class="col-10">
-                {{item.description}}</p>
-            </div>
-            <div class="col-2 editable">
-                <span class="price">{{item.price}}</span>
-            </div>
-            {% endfor %}    
-        </div>
-</section>
-<footer>
+<!-- Menu Section -->
+{% include menu.html %}
 
+<!-- site footer-->
+<footer class="text-center bg-image bg-water ">
+    <div class="padded-t-2 padded-b-2"> 
+        <h2> book an experience. </h2>
+        <p> <a href="mailto:negronicocktailbar@gmail.com"> email us: negronicocktailbar@gmail.com</a> </p>
+        <p> <a href="tel:+61555555555"> call us: +615 5555 5555</a> </p>
+    </div>
+    <div class="sub-footer">
+        <p> Copyright 2021 </p>
+    </div>
 </footer>        
