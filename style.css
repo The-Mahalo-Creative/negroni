@@ -89,10 +89,7 @@ a {
     margin-top: 0.5rem;
     font-size: 0.9rem;
 }
-
-.menu h3 {
-	margin: 1rem 0;
-}
+.menu h3 { margin: 1rem 0;}
 
 /* Unique typography styles  */
 .tight-text {
@@ -103,19 +100,9 @@ footer {
     padding: 5%;
     padding-bottom: 1rem;
 }
-
-footer a {
-    font-size: 1.2rem;
-}
-
-footer h2 {
-    margin-bottom: 0.5rem;
-}
-
-.sub-footer {
-    padding-top: 5%;
-}
-
+footer a { font-size: 1.2rem;}
+footer h2 { margin-bottom: 0.5rem;}
+.sub-footer { padding-top: 5%;}
 .sub-footer p {
     font-size: 0.8rem;
     opacity: 0.7;
@@ -128,9 +115,42 @@ footer h2 {
     background-position: center; 
     background-repeat: no-repeat;
 }
-
 .bg-cocktail {background-image: url('/images/negroni-glass-faded.jpg') }
 .bg-window {background-image: url('/images/negroni-2.jpg') }
 .bg-plant {background-image: url('/images/negroni-4.jpg') }
 .bg-water {background-image: url('/images/water-light.jpg') }
 
+/* Max 1280px	_lg-*/
+@media (max-width: 80em){
+    h1      { font-size: 9rem;}
+    h1 span { font-size: 3rem;}
+}
+
+/* Max 1024px	_md-*/
+@media (max-width: 64em)    {    
+    h1      { font-size: 8rem;}
+    h1 span { font-size: 2.7rem;}
+}
+/* SM - max-width in pixels approximately 768px */
+@media(max-width: 48em) {
+    h1      { font-size: 7rem;}
+    h1 span { font-size: 2.4rem;}
+}
+/* Max 576px	_xs-**/
+@media (max-width: 36em){
+    .padded-0-sm    { padding: 0;}
+    .padded-tb-sm   { 
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    h1              { font-size: 6rem;}
+    h1 span         { font-size: 2rem;}
+    footer a {
+        font-size: 1.1rem;
+      }
+}
+/* Max 416px	_xxs-**/
+@media (max-width: 26em){
+    h1              { font-size: 22vw;}
+    h1 span         { font-size: 7.5vw;}
+}
